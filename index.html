@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Fones</title>
+      <link rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      <!-- or -->
+      <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Sounbox</a>
+        <nav>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </nav>
+
+        <div class="icons"><i class='bx bx-cart' ></i><i class='bx bx-menu' ></i></div>
+    </header>
+
+    <section class="container-conteudo">
+        <div class="imagem"><img src="imgs/product1.png" alt="fone1" id="imagem-principal"></div>
+        <div class="textos">
+            <h1>Wireless <br> Headphones</h1>
+            <h5>The smarter way to listen</h5>
+            <h3>$199.00</h3>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+    </section>
+
+    <div class="produtos">
+        <li class="img1"><img src="imgs/main1.png" alt="" onclick="slider('product1')"></li>
+        <li class="img2"><img src="imgs/main2.png" alt="" onclick="slider('product2')"></li>
+        <li class="img3"><img src="imgs/main3.png" alt="" onclick="slider('product3')"></li>
+    </div>
+
+    <script>
+      function slider(imgDoProduto) {
+        const imagem = document.querySelector('#imagem-principal')
+        imagem.src = `imgs/${imgDoProduto}.png`
+      }
+    </script>
+</body>
+</html>
